@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<main class="main">
+        <div class="contactUs">
+            <section class="heading">
+                <h1>Contact Us</h1>
+                <p>Lets get in touch, we'd love to help</p>
+            </section>
+            <section class="products">
+                <div class="message">
+                    <h1>SEND US A MESSAGE</h1>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email"><img src="{% static 'images/userorange.png' %}" width="" height="" alt="" />
+                                First Name</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email"><img src="{% static 'images/userorange.png' %}" width="" height="" alt="" />
+                                Last Name</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="email"><img src="{% static 'images/envelope-orange.png' %}" width="" height="" alt="" />
+                                Email</label>
+                            <input type="email" class="form-control" id="email" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="exampleFormControlTextarea1"><img src="{% static 'images/commentorange.png' %}" width=""
+                                    height="" alt="" />
+                                Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn send">SEND</button>
+                </div>
+                <div class="map">
+                    <h1>Our Location</h1>
+                    <img src="{% static 'images/map.png' %}" width="" height="" alt="" />
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}
+
+
+

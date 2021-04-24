@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+<main class="main">
+        <div class="cart">
+            <section class="heading">
+                <h1>Your Shopping Cart</h1>
+                <p>Home / Shopping Cart</p>
+            </section>
+            <section class="products">
+                <div class="productSummary">
+                    <div class="productsTable">
+                        <div class="productsTableHead">
+                            <p class="productDetail">Product details</p>
+                            <p class="quantity">Quantity</p>
+                            <p class="price">price</p>
+                            <p class="total">total</p>
+                            <p class="remove">Remove</p>
+                        </div>
+                        <div class="productsTableBody">
+                            <div class="tableBodyRow">
+                                <div class="productDetail">
+                                    <img src="{% static 'images/shop-new-table.png' %}" width="" height="" alt="" />
+                                    <div>
+                                        <h5>Donate a Book,
+                                            Change a Life</h5>
+                                        <p>Hard Cover</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="quantityinner">
+                                        <a href="#" class="minus"><img src="{% static 'images/remove.png' %}" width="" height=""
+                                                alt="" /></a>
+                                        <p>1</p>
+                                        <a href="#" class="plus"><img src="{% static 'images/plus(4).png' %}" width="" height=""
+                                                alt="" /></a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>$150</p>
+                                </div>
+                                <div class="total">
+                                    <p>$150</p>
+                                </div>
+                                <div class="remove">
+                                    <a href="#"><img src="{% static 'images/close-cross.png' %}" width="" height="" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="tableBodyRow">
+                                <div class="productDetail">
+                                    <img src="{% static 'images/shop-new-table.png' %}" width="" height="" alt="" />
+                                    <div>
+                                        <h5>Donate a Book,
+                                            Change a Life</h5>
+                                        <p>Hard Cover</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="quantityinner">
+                                        <a href="#" class="minus"><img src="{% static 'images/remove.png' %}" width="" height=""
+                                                alt="" /></a>
+                                        <p>1</p>
+                                        <a href="#" class="plus"><img src="{% static 'images/plus(4).png' %}" width="" height=""
+                                                alt="" /></a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>$150</p>
+                                </div>
+                                <div class="total">
+                                    <p>$150</p>
+                                </div>
+                                <div class="remove">
+                                    <a href="#"><img src="{% static 'images/close-cross.png' %}" width="" height="" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="tableBodyRow">
+                                <div class="productDetail">
+                                    <img src="{% static 'images/shop-new-table.png' %}" width="" height="" alt="" />
+                                    <div>
+                                        <h5>Donate a Book,
+                                            Change a Life</h5>
+                                        <p>Hard Cover</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="quantityinner">
+                                        <a href="#" class="minus"><img src="{% static 'images/remove.png' %}" width="" height=""
+                                                alt="" /></a>
+                                        <p>1</p>
+                                        <a href="#" class="plus"><img src="{% static 'images/plus(4).png' %}" width="" height=""
+                                                alt="" /></a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>$150</p>
+                                </div>
+                                <div class="total">
+                                    <p>$150</p>
+                                </div>
+                                <div class="remove">
+                                    <a href="#"><img src="{% static 'images/close-cross.png' %}" width="" height="" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="tableBodyRow">
+                                <div class="productDetail">
+                                    <img src="{% static 'images/shop-new-table.png' %}" width="" height="" alt="" />
+                                    <div>
+                                        <h5>Donate a Book,
+                                            Change a Life</h5>
+                                        <p>Hard Cover</p>
+                                    </div>
+                                </div>
+                                <div class="quantity">
+                                    <div class="quantityinner">
+                                        <a href="#" class="minus"><img src="{% static 'images/remove.png' %}" width="" height=""
+                                                alt="" /></a>
+                                        <p>1</p>
+                                        <a href="#" class="plus"><img src="{% static 'images/plus(4).png' %}" width="" height=""
+                                                alt="" /></a>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <p>$150</p>
+                                </div>
+                                <div class="total">
+                                    <p>$150</p>
+                                </div>
+                                <div class="remove">
+                                    <a href="#"><img src="{% static 'images/close-cross.png' %}" width="" height="" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orderSummary">
+                        <h1>Order Summary</h1>
+                        <div class="summary">
+                            <p>ITEMS: 3</p>
+                            <h5>$457.98</h5>
+                        </div>
+                        <div class="inputform">
+                            <div class="form-group">
+                                <label for="inputState">SHIPPING</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>Standard Delivery - $5.00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputCity">PROMO CODE</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Enter you code" />
+                            </div>
+                            <button class="btn">Apply</button>
+                        </div>
+                        <div class="totalCost">
+                            <h1>TOTAL COST</h1>
+                            <h6>$1452.23</h6>
+                        </div>
+                        <div class="checkout">
+                            <button type="button" class="btn" data-toggle="modal" data-target="#checkoutModal">Check out </button>
+                        </div>
+                        <a href="#" class="reviews">60 Reviews</a>
+                    </div>
+                     <!-- ------------------------------------------------------------------------------------------ -->
+        <!-- checkout Modal -->
+        <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <h1>Join Us!</h1>
+                    <button class="btn user">Register as a user</button>
+                    <button class="btn advisor">Register as a financial advisor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------- -->
+                </div>
+            </section>
+        </div>
+    </main>
+{% endblock %}

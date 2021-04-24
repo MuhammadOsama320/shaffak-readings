@@ -1,0 +1,409 @@
+{% load static %}
+<header class="header">
+    <div class="headTop">
+      <div class="phoneEmail">
+        <a href="#" class="phone"><img src="{% static 'images/phone-call.png' %}" width="" height="" alt="" />0300-7895214</a>
+        <a href="#" class="email"><img src="{% static 'images/envelope.png' %}" width="" height="" alt="" />shaffaqinquiry@gmail.com</a>
+      </div>
+      <div class="icons">
+        <a href="#" class="facebook"><img src="{% static 'images/facebook-app-symbol.png' %}" width="" height="" alt="" /></a>
+        <a href="#" class="google"><img src="{% static 'images/google-plus.png' %}" width="" height="" alt="" /></a>
+        <a href="#" class="pinterest"><img src="{% static 'images/pinterest-social-logo.png' %}" width="" height="" alt="" /></a>
+        <a href="#" class="twitter"><img src="{% static 'images/twitter.png' %}" width="" height="" alt="" /></a>
+      </div>
+    </div>
+    <div class="headInner">
+      <a href="#" title="" class="logo">
+        <img src="{% static 'images/logo.png' %}" height="" width="" alt="logo" />
+      </a>
+      <nav class="mainMenu">
+        <ul class="socialIcons">
+          <div>
+            <li>
+              <a href="#" class="active">Home</a>
+            </li>
+            <li>
+              <a href="#">Returns & Orders</a>
+            </li>
+            <li>
+              <a href="#">Columns</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="#" class="wishlist"><img src="{% static 'images/heart.png' %}" width="" height="" alt="" />Wishlist</a>
+            </li>
+            <li>
+              <div class="items">
+                <img src="{% static 'images/bag.png' %}" width="" height="" alt="" />
+                <div class="shopping">
+                  <a href="#">Shopping Cart</a>
+                  <a href="#"> 0 Item . 0.00</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" type="button" class="btn register" data-toggle="modal" data-target="#registerModal">
+                <img src="{% static 'images/user.png' %}" width="" height="" alt="" />
+                Hello, <span>Sign in</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="headBottom">
+      <label class="dropdown">
+        <div class="dd-button">
+          CATEGORY MENU <img src="{% static 'images/menu.png' %}" width="" height="" alt="" />
+        </div>
+        <input type="checkbox" class="dd-input" id="test">
+        <ul class="dd-menu">
+          <li class="borderbottomf">CATEGORY MENU <img src="{% static 'images/menu.png' %}" width="" height="" alt="" /></li>
+          <li>Fiction</li>
+          <li>Non Fiction</li>
+          <li>Drama</li>
+          <li>Thriller</li>
+          <li>Literature</li>
+          <li>Fiction</li>
+          <li>Non Fiction</li>
+          <li>Drama</li>
+          <li>Thriller</li>
+          <li>Literature</li>
+        </ul>
+      </label>
+      <div class="search">
+        <input type="text" name="search" placeholder="Search a book here" />
+        <a href="#"><img src="{% static 'images/searchblack.png' %}" width="" height="" alt="" /></a>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------ -->
+    <!-- Register Modal -->
+    <div class="modal login fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <h1>SIGN IN</h1>
+            <p>To continue your account</p>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/envelope-orange.png' %}" width="" height="" alt="" />
+                  Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/locked-padlock.png' %}" width="" height="" alt="" />
+                  Password</label>
+                <input type="email" class="form-control" id="email" />
+                <img class="eye" src="{% static 'images/eye.png' %}" width="" height="" alt="" />
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <button class="btn login">Log in</button>
+            <div class="forgotP">
+              <a href="#" type="button" class="btn forgot" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+                data-target="#forgetpasswordModal"><span aria-hidden="true">Forgot
+                  password?</span></a>
+            </div>
+            <div class="orloginwith">
+              <span></span>
+              <p>or Login with</p>
+              <span></span>
+            </div>
+            <div class="sociallinks">
+              <a href="#"><img src="{% static 'images/facebooklogin.png' %}" width="" height="" alt="" /></a>
+              <a href="#"><img src="{% static 'images/googlelogin.png' %}" width="" height="" alt="" /></a>
+              <a href="#"><img src="{% static 'images/twitterlogin.png' %}" width="" height="" alt="" /></a>
+            </div>
+            <div class="sociallinks">
+              <p>Don't have an account?</p>
+              <a href="#" type="button" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+                data-target="#signupModal"><span aria-hidden="true">Sign Up</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-- -->
+    <div class="modal signup fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <h1>SIGN UP</h1>
+            <p>Enter the following information to create an account</p>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/userorange.png' %}" width="" height="" alt="" />
+                  Full Name</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/envelope-orange.png' %}" width="" height="" alt="" />
+                  Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/locked-padlock.png' %}" width="" height="" alt="" />
+                  Password</label>
+                <input type="email" class="form-control" id="email" />
+                <img class="eye" src="{% static 'images/eye.png' %}" width="" height="" alt="" />
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                I accept the Terms & Conditions and Privacy Policy.
+              </label>
+            </div>
+            <button class="btn login">Sign Up</button>
+            <!-- <div class="forgotP">
+              <a href="#" type="button" class="btn forgot" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+                data-target="#forgetpasswordModal"><span aria-hidden="true">Forgot
+                  password?</span></a>
+            </div> -->
+            <div class="orloginwith">
+              <span></span>
+              <p>or Sign Up with</p>
+              <span></span>
+            </div>
+            <div class="sociallinks">
+              <a href="#"><img src="{% static 'images/facebooklogin.png' %}" width="" height="" alt="" /></a>
+              <a href="#"><img src="{% static 'images/googlelogin.png' %}" width="" height="" alt="" /></a>
+              <a href="#"><img src="{% static 'images/twitterlogin.png' %}" width="" height="" alt="" /></a>
+            </div>
+            <div class="sociallinks">
+              <p>Already have an account?</p>
+              <a href="#" type="button" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+                data-target="#registerModal"><span aria-hidden="true">Log In</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
+    <div class="modal forget fade" id="forgetpasswordModal" tabindex="-1" role="dialog"
+      aria-labelledby="forgetpasswordModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <h1>Forgot Password?</h1>
+            <p class="forget">To reset your password enter your email address and click send. If you have a valid email
+              address, you will receive instructions on how to reset your password.</p>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/envelope-orange.png' %}" width="" height="" alt="" />
+                  Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <button class="btn login" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+              data-target="#confirmModal"><span aria-hidden="true">
+                Done</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <div class="modal forget fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <div class="thankyou">
+              <img src="{% static 'images/thankyoucheck.png' %}" width="" height="" alt="" />
+            </div>
+            <h1>RESET Password</h1>
+            <p class="forget">A message has been sent to you by email with instructions on how to reset your password
+            </p>
+            <button class="btn login" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+              data-target="#resetModal"><span aria-hidden="true">
+                Next</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <div class="modal forget fade" id="resetModal" tabindex="-1" role="dialog" aria-labelledby="resetModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <h1>RESET PASSWORD</h1>
+            <p class="forget">Please enter your new password</p>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/locked-padlock.png' %}" width="" height="" alt="" />
+                  New Password</label>
+                <input type="email" class="form-control" id="email" />
+                <img class="eye" src="{% static 'images/eye.png' %}" width="" height="" alt="" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-12">
+                <label for="email"><img src="{% static 'images/locked-padlock.png' %}" width="" height="" alt="" />
+                  Confirm Password</label>
+                <input type="email" class="form-control" id="email" />
+                <img class="eye" src="{% static 'images/eye.png' %}" width="" height="" alt="" />
+              </div>
+            </div>
+            <button class="btn login" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+              data-target="#changeModal"><span aria-hidden="true">
+                Done</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =-=-=-=-=-=-=-=-=-=-=--=-=-= -->
+    <div class="modal forget fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="changeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body signin">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+            <div class="thankyou">
+              <img src="{% static 'images/thankyoucheck.png' %}" width="" height="" alt="" />
+            </div>
+            <h1>Password Changed!</h1>
+            <p class="forget">Your password was successfully changed .</p>
+            <button class="btn login" data-dismiss="modal" aria-label="Close" data-toggle="modal"
+              data-target="#registerModal"><span aria-hidden="true">
+                Next</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <div class="modal shopnow fade" id="shopnowModal" tabindex="-1" role="dialog" aria-labelledby="shopnowModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body shop">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="{% static 'images/close.png' %}" width="" height="" alt="" /></span>
+            </button>
+
+
+
+            <div class="quickView">
+              <div class="donate">
+                <img class="big" src="{% static 'images/shop-new-2.png' %}" width="" height="" alt="" />
+                <div class="multiimg">
+                  <img src="{% static 'images/shop-new-3.png' %}" width="" height="" alt="" />
+                  <img src="{% static 'images/shop-new-3.png' %}" width="" height="" alt="" />
+                  <img src="{% static 'images/shop-new-3.png' %}" width="" height="" alt="" />
+                </div>
+              </div>
+              <div class="changelife">
+                <h1>Donate a Book, Change a Life</h1>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                  totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                  sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut...</p>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Price:</h5>
+                  </div>
+                  <div>
+                    <h6>2200 PKR</h6>
+                  </div>
+                </div>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Availability:</h5>
+                  </div>
+                  <div>
+                    <h6 class="red">In Stock</h6>
+                  </div>
+                </div>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Format:</h5>
+                  </div>
+                  <div>
+                    <h6>Hardcover</h6>
+                  </div>
+                </div>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Language:</h5>
+                  </div>
+                  <div>
+                    <h6>English</h6>
+                  </div>
+                </div>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Quantity:</h5>
+                  </div>
+                  <div class="quantity">
+                    <a href="#">-</a>
+                    <p>2</p>
+                    <a href="#">+</a>
+                  </div>
+                </div>
+                <div class="shopdetail">
+                  <div class="title">
+                    <h5>Sub Total:</h5>
+                  </div>
+                  <div>
+                    <h6>2200 PKR</h6>
+                  </div>
+                </div>
+                <button class="btn">Add to Cart</button>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+    <div class="headmainbanner">
+      <div class="banner">
+        <img src="{% static 'images/banner.png' %}" height="" width="" alt="banner" />
+        <div class="cont">
+          <h1>Get 70% off on All Books</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+          <button class="btn" data-toggle="modal" data-target="#shopnowModal">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
