@@ -20,27 +20,27 @@
         <ul class="socialIcons">
           <div>
             <li>
-              <a href="#" class="active">Home</a>
+              <a href="{% url 'index' %}" class="active">Home</a>
             </li>
             <li>
-              <a href="#">Returns & Orders</a>
+              <a href="{% url 'returnsAndOrders' %}">Returns & Orders</a>
             </li>
             <li>
-              <a href="#">Columns</a>
+              <a href="{% url 'allColumns' %}">Columns</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="{% url 'contactUs' %}">Contact</a>
             </li>
           </div>
           <div>
             <li>
-              <a href="#" class="wishlist"><img src="{% static 'images/heart.png' %}" width="" height="" alt="" />Wishlist</a>
+              <a href="{% url 'wishlist' %}" class="wishlist"><img src="{% static 'images/heart.png' %}" width="" height="" alt="" />Wishlist</a>
             </li>
             <li>
               <div class="items">
                 <img src="{% static 'images/bag.png' %}" width="" height="" alt="" />
                 <div class="shopping">
-                  <a href="#">Shopping Cart</a>
+                  <a href="{% url 'cart' %}">Shopping Cart</a>
                   <a href="#"> 0 Item . 0.00</a>
                 </div>
               </div>

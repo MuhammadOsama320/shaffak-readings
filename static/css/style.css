@@ -6459,9 +6459,7 @@ border-bottom: 1px solid #fff;
     padding: 2px;
     margin-top: 15px;
   }
-  .recentcolumns button.slick-arrow {
-    top: 50%;
-  }
+
   .recentcolumns button.slick-arrow::before {
     opacity: 1;
     color: #D14031;
@@ -9029,9 +9027,7 @@ border-bottom: 1px solid #fff;
     padding: 2px;
     margin-top: 15px;
   }
-  .recentcolumns button.slick-arrow {
-    top: 50%;
-  }
+
   .recentcolumns button.slick-arrow::before {
     opacity: 1;
     color: #D14031;
@@ -10328,7 +10324,7 @@ border-bottom: 1px solid #fff;
   }
   .allColumns .columnscard {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     padding: 55px 35px;
@@ -11176,8 +11172,8 @@ border-bottom: 1px solid #fff;
   }
   .newArrivals .carousel .arrivalcard {
     position: relative;
-    width: 200.24px !important;
-    margin: 0px 19.39px;
+    width: 4.94% !important;
+    margin: 0px 0.47%;
     text-align: center;
   }
   .newArrivals .carousel .arrivalcard img {
@@ -11340,9 +11336,9 @@ border-bottom: 1px solid #fff;
     margin: 0px auto;
   }
   .recentcolumns .arrivalcard {
-    width: 348px;
+    width: 7.96% !important;
     /* height: 393px; */
-    margin: 0px 19px;
+    margin: 0px 0.56%;
     background: #fff;
     box-shadow: 0 0 5px 3px #e6e6e6;
     border-radius: 8px;
@@ -11391,8 +11387,8 @@ border-bottom: 1px solid #fff;
     font-style: normal;
   }
   .recentcolumns .arrivalcard .innercardmargin button {
-    width: 109px;
-    height: 30px;
+    /*width: 109px;*/
+    /*height: 30px;*/
     color: #fff;
     background: #D14031;
     font-family: 'Work Sans', sans-serif;
@@ -11402,14 +11398,12 @@ border-bottom: 1px solid #fff;
     padding: 2px;
     margin-top: 15px;
   }
-  .recentcolumns button.slick-arrow {
-    top: 50%;
-  }
+
   .recentcolumns button.slick-arrow::before {
     opacity: 1;
     color: #D14031;
     font-size: 25px;
-    line-height: 0px;
+    /*line-height: 0px;*/
   }
   /* ---------------------subscribe------------------------ */
   .subscribe {
@@ -12223,15 +12217,15 @@ border-bottom: 1px solid #fff;
   }
   .allColumns .columnscard {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     padding: 55px 35px;
   }
   .columnscard .arrivalcard {
-    width: 391px;
+    width: 30.17%;
     /* height: 393px; */
-    margin: 20px;
+    margin: 1.58%;
     background: #fff;
     box-shadow: 0 0 5px 3px #e6e6e6;
     border-radius: 8px;
